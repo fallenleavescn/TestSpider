@@ -35,6 +35,7 @@
             this.startBtn = new System.Windows.Forms.Button();
             this.label = new System.Windows.Forms.Label();
             this.targetUrl = new System.Windows.Forms.TextBox();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
             // 
             // srcBtn
@@ -72,7 +73,7 @@
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(566, 308);
+            this.textBox1.Size = new System.Drawing.Size(566, 278);
             this.textBox1.TabIndex = 3;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -100,16 +101,23 @@
             this.targetUrl.BackColor = System.Drawing.Color.White;
             this.targetUrl.Location = new System.Drawing.Point(63, 66);
             this.targetUrl.Name = "targetUrl";
-            this.targetUrl.ReadOnly = true;
             this.targetUrl.Size = new System.Drawing.Size(390, 25);
             this.targetUrl.TabIndex = 1;
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(12, 401);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(566, 23);
+            this.progressBar1.TabIndex = 5;
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(596, 436);
+            this.ClientSize = new System.Drawing.Size(594, 436);
+            this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.startBtn);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label);
@@ -136,6 +144,7 @@
         private System.Windows.Forms.Button startBtn;
         private System.Windows.Forms.Label label;
         private System.Windows.Forms.TextBox targetUrl;
+        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }
 
